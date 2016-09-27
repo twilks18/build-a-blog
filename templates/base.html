@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+        <title>blog</title>
+  </head>
+  <style type="text/css">
+  body{
+    background-color: rgb(0, 100,100 );
+    width:800px;
+
+    padding:10px;
+
+  }
+
+  label {
+    display: block;
+    font-size: 30px;
+
+    font-style: oblique;
+  }
+
+  textarea {
+    width:400px;
+    height:200px;
+    font-size: 17px;
+    font-family:monospace;
+
+  }
+
+  input[type=text]{
+    width:400px;
+    font-size: 20px;
+    padding: 2px;
+    }
+
+  input[type=submit]{
+  font-size: 24px;
+  font-style: oblique;
+  }
+  .error {
+    color:red
+  }
+
+h1{
+  width:800px;
+  padding: 0px;
+  border-width:5px;
+  margin-left: 250px;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+p {
+
+  width:450px;
+  padding:10px;
+  border-width: 2px;
+  margin-left: 270px;
+  color:black;
+  font-size:12px;
+}
+
+#a{
+  padding: 0px;
+  border-width:5px;
+  margin-top: 50px;
+  margin-left: 450px;
+  font-size:20px; }
+
+  #b{
+    padding: 0px;
+    border-width:5px;
+    margin-left: 430px;
+    font-size:16px;
+   }
+  </style>
+    <body>
+      <h1 >
+      <a href="/blog">What's On Your Mind?</a>
+      </h1>
+
+      {% block content %}
+      {% endblock %}
+
+    </body>
+  </html>

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content%}
+
+<p>Often there are times when people have a rough day, and would like to share it with someone. So feel free to post whatever you like,
+   but keep it <b>anonymous</b>. Or if you would like to offer your advice to those that ask feel free to respond.</p>
+
+
+<hr>
+{%for post in posted %}
+<div id="a"><a href="/blog/{{post.key().id()}}">{{post.title}}</a></div>
+<pre id="b">{{post.posts}}</pre>
+
+{% endfor %}
+{% endblock %}
